@@ -51,7 +51,7 @@ $breakpoint-md: 768px;
     }
   }
 
-  // Елемент: Декоративна лінія (.news__line)
+
   &__line {
     flex-grow: 1;
     height: 2px;
@@ -93,22 +93,20 @@ $breakpoint-md: 768px;
     }
   }
 
-  // Елемент: Футер секції (.news__footer)
+
   &__footer {
     text-align: center;
     margin-top: 20px;
   }
 }
 
-// ==========================================
-// 4. Блок: Картка Новини (.news-card)
-// ==========================================
+
 .news-card {
   flex: 1;
   display: flex;
   flex-direction: column;
 
-  // Елемент: Дата (.news-card__date)
+
   &__date {
     color: $color-purple;
     font-size: 14px;
@@ -117,7 +115,7 @@ $breakpoint-md: 768px;
     display: block;
   }
 
-  // Елемент: Зображення (.news-card__image)
+
   &__image {
     width: 100%;
     height: auto;
@@ -126,7 +124,6 @@ $breakpoint-md: 768px;
     margin-bottom: 20px;
   }
 
-  // Елемент: Заголовок картки (.news-card__title)
   &__title {
     color: $color-gold;
     font-size: 28px;
@@ -134,15 +131,7 @@ $breakpoint-md: 768px;
     line-height: 1.3;
     margin: 0;
 
-    // Вкладений тег посилання всередині БЕМ-елемента
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: color $transition-speed;
 
-      &:hover {
-        color: $color-gold-hover;
-      }
-    }
+  
   }
 }
