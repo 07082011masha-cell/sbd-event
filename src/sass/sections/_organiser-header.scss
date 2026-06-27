@@ -1,1 +1,129 @@
 @use "../base/variables" as *;
+
+.header {
+    background-image: url(../img/vova/desktop/pexels.png);
+    background-size: cover;
+    padding-top: 16px;
+    padding-bottom: 281px;
+
+    &__logo {
+        padding: 8px;
+        width: 154px;
+        height: 96px;
+        font-family: "Montserrat";
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 125%;
+        color: #DA9D27;
+    }
+
+    &__div {
+        display: flex;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        align-items: end;
+    }
+
+    &__svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    &__ext {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 113%;
+        color: #A76E00;
+    }
+
+    &__info {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 113%;
+        color: #A76E00;
+    }
+
+    &__login {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #A76E00;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__item {
+
+    }
+
+    &__page {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #A76E00;
+    }
+
+    &__input {
+        border: 1px solid #979797;
+        border-radius: 4px;
+        width: 174px;
+        height: 40px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #979797;
+    }
+
+    &__seach {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 132%;
+        color: #FDFDFD;
+
+    }
+
+    &__text {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 129%;
+        color: #979797;
+    }
+
+    &__butn {
+        border-bottom: 1px solid #3D3C39;
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 240px;
+        height: 42px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #04867E;
+    }
+}
