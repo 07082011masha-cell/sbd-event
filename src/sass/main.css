@@ -242,6 +242,249 @@ body {
   }
 }
 
+.key {
+  background-color: #fdfdfd;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 724px) {
+  .key {
+    padding-top: 88px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key {
+    padding-top: 108px;
+    padding-bottom: 48px;
+  }
+}
+.key__tittle {
+  color: #a76e00;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  position: relative;
+  margin-bottom: 0;
+}
+.key__tittle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #a76e00;
+}
+@media screen and (min-width: 724px) {
+  .key__tittle::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 724px) {
+  .key__tittle {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__tittle {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+.key__dash {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .key__dash {
+    display: inline;
+  }
+}
+@media screen and (min-width: 724px) {
+  .key__hide {
+    display: none;
+  }
+}
+.key__more {
+  color: #a76e00;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+@media screen and (min-width: 724px) {
+  .key__more {
+    text-align: end;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__more {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+.key__subtitle {
+  color: #da9d27;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media screen and (min-width: 724px) {
+  .key__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    width: 516px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__subtitle {
+    position: static;
+    width: auto;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.key__box {
+  display: block;
+}
+@media screen and (min-width: 724px) {
+  .key__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__box {
+    position: static;
+    padding-top: 0;
+    align-items: flex-start;
+    gap: 88px;
+  }
+}
+.key__composition {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+@media screen and (min-width: 724px) {
+  .key__composition {
+    order: 2;
+    padding-top: 32px;
+  }
+}
+.key__top {
+  width: 325px;
+  color: #3d3c39;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 724px) {
+  .key__top {
+    font-size: 14px;
+    line-height: 18px;
+    width: 333px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__top {
+    font-size: 20px;
+    line-height: 32px;
+    width: 537px;
+  }
+}
+.key__bottom {
+  width: 325px;
+  color: #3d3c39;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media screen and (min-width: 724px) {
+  .key__bottom {
+    font-size: 14px;
+    line-height: 18px;
+    width: 333px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__bottom {
+    font-size: 20px;
+    line-height: 32px;
+    width: 537px;
+  }
+}
+.key__a {
+  width: 343px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f8f1e9;
+  color: #04867e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 724px) {
+  .key__a {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid #3d3c39;
+    background: #fdfdfd;
+    color: #04867e;
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .key__a {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid #3d3c39;
+    background: #fdfdfd;
+    margin-top: 32px;
+  }
+}
+.key__a:hover {
+  background: #04867e;
+  color: #f8f1e9;
+}
+
 .btn-primary {
   font-family: var(--font-family);
   font-weight: 700;
