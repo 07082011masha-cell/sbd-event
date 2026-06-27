@@ -52,6 +52,113 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.header {
+  background-image: url(../img/vova/desktop/pexels.png);
+  background-size: cover;
+  padding-top: 16px;
+  padding-bottom: 281px;
+}
+.header__logo {
+  padding: 8px;
+  width: 154px;
+  height: 96px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 125%;
+  color: #DA9D27;
+}
+.header__div {
+  display: flex;
+}
+.header__box {
+  display: flex;
+}
+.header__list {
+  display: flex;
+  gap: 40px;
+  align-items: end;
+}
+.header__svg {
+  height: 24px;
+  width: 24px;
+}
+.header__ext {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #A76E00;
+}
+.header__info {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #A76E00;
+}
+.header__login {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #A76E00;
+}
+.header__nav {
+  display: flex;
+}
+.header__page {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #A76E00;
+}
+.header__input {
+  border: 1px solid #979797;
+  border-radius: 4px;
+  width: 174px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #979797;
+}
+.header__seach {
+  width: 24px;
+  height: 24px;
+}
+.header__social {
+  display: flex;
+}
+.header__title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 132%;
+  color: #FDFDFD;
+}
+.header__text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: #979797;
+}
+.header__butn {
+  border-bottom: 1px solid #3D3C39;
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 240px;
+  height: 42px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #04867E;
+}
+
 .design {
   background-color: #fdfdfd;
   padding-top: 40px;
