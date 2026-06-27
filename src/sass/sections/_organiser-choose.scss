@@ -1,1 +1,106 @@
 @use "../base/variables" as *;
+
+.choose {
+    padding-top: 40px;
+    padding-bottom: 112px;
+    background-color: #979797;
+    background-image: url(../../img/vova/mobile/vecpic.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+
+    @media screen and (min-width: 724px) {
+        padding-top: 89px;
+        padding-bottom: 48px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        padding-top: 100px;
+        padding-bottom: 48px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 133%;
+        color: #FDFDFD;
+
+        @media screen and (min-width: 724px) {
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        @media screen and (min-width: 1380px) {
+            font-size: 56px;
+            line-height: 114%;
+        }
+    }
+
+    &__div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 724px) {
+            display: contents;
+        }
+    }
+
+    &__box {
+        border-radius: 8px;
+        padding: 16px;
+        width: 316px;
+        height: 304px;
+        background-color: #F8F1E9;
+
+        @media screen and (min-width: 724px) {
+            display: contents;
+        }
+    }
+
+    &__list {
+
+        @media screen and (min-width: 724px) {
+            border-radius: 8px;
+            padding: 12px 8px;
+            width: 604px;
+            height: 240px;
+            background-color: #F8F1E9;
+        }
+
+        @media screen and (min-width: 1380px) {
+            border-radius: 8px;
+            padding: 12px 0px;
+            width: 652px;
+            height: 256px;
+
+        }
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: #3D3C39;
+    }
+
+    &__butn {
+        border-bottom: 1px solid #3D3C39;
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 240px;
+        height: 42px;
+        background-color: #FDFDFD;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #04867E;
+        display: none;
+
+        @media screen and (min-width: 724px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 1380px) {}
+    }
+}
