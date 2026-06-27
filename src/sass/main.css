@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -241,26 +242,26 @@ body {
   }
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .btn-primary {
-  display: inline-block;
-  padding: 12px 40px;
-  border: 2px solid #da9d27;
-  color: #008080;
-  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 700;
   font-size: 18px;
+  line-height: 122%;
+  color: #04867e;
+  position: relative; /* Обов'язково для позиціонування смуги */
+  text-decoration: none;
+  color: #007f7a;
   font-weight: bold;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  display: inline-block; /* Щоб працювали відступи */
 }
-.btn-primary:hover {
-  background-color: #da9d27;
-  color: #ffffff;
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  bottom: -8px;
+  height: 2px;
+  background-color: #007f7a;
 }
 
 .news {
@@ -299,6 +300,9 @@ body {
   font-weight: normal;
   margin: 0;
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
 }
 @media (max-width: 768px) {
   .news__title {
@@ -329,12 +333,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+.news-card__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: var(--gold-logo);
+}
 .news-card__date {
   color: #4a2cb0;
-  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 15px;
   display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  padding-bottom: 24px;
+  color: #3e1063;
 }
 .news-card__image {
   width: 100%;
@@ -342,7 +356,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .news-card__title {
   color: #cca86e;
