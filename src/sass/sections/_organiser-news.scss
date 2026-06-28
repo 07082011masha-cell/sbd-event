@@ -15,18 +15,19 @@ $breakpoint-md: 768px;
   font-size: 18px;
   line-height: 122%;
   color: $green-text;
-   position: relative; /* Обов'язково для позиціонування смуги */
+   position: relative; 
   text-decoration: none;
   color: #007f7a;
   font-weight: bold;
-  display: inline-block; /* Щоб працювали відступи */
+  display: inline-block; 
+  padding-bottom: 10px;
 
   &::after {
     content: '';
     position: absolute;
     left: -20px;
     right: -20px; 
-    bottom: -8px; 
+    bottom: 4px; 
     height: 2px; 
     background-color: #007f7a;
   }
