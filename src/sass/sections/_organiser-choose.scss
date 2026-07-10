@@ -12,11 +12,15 @@
     @media screen and (min-width: 724px) {
         padding-top: 89px;
         padding-bottom: 48px;
+        background-image: url(../img/vova/tablet/vec-tablet.png);
+        background-position: center 160px;
     }
 
     @media screen and (min-width: 1380px) {
         padding-top: 100px;
         padding-bottom: 48px;
+        background-position: center;
+        background-image: url(../img/vova/desktop/group.png);
     }
 
     &__title {
@@ -24,15 +28,18 @@
         font-size: 30px;
         line-height: 133%;
         color: #FDFDFD;
+        margin-bottom: 16px;
 
         @media screen and (min-width: 724px) {
             font-size: 40px;
             line-height: 120%;
+            margin-bottom: 40px;
         }
 
         @media screen and (min-width: 1380px) {
             font-size: 56px;
             line-height: 114%;
+            margin-bottom: 24px;
         }
     }
 
@@ -40,6 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
 
         @media screen and (min-width: 724px) {
             display: contents;
@@ -50,7 +58,7 @@
         border-radius: 8px;
         padding: 16px;
         width: 316px;
-        height: 304px;
+        height: 288px;
         background-color: #F8F1E9;
 
         @media screen and (min-width: 724px) {
@@ -58,7 +66,87 @@
         }
     }
 
-    &__list {
+    &__desktop {
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            gap: 50px;
+        }
+
+    }
+
+    &__help {
+        display: flex;
+        align-items: center;
+    }
+
+    &__border1 {
+        @media screen and (min-width: 724px) {
+            width: 88px;
+            border-top: 2px solid #A76E00;
+            margin-right: 20px;
+        }
+    }
+
+    &__border2 {
+        @media screen and (min-width: 724px) {
+            width: 176px;
+            border-top: 2px solid #A76E00;
+            margin-right: 20px;
+        }
+    }
+
+    &__border3 {
+        @media screen and (min-width: 724px) {
+            width: 264px;
+            border-top: 2px solid #A76E00;
+            margin-right: 20px;
+        }
+    }
+
+    &__border4 {
+        @media screen and (min-width: 724px) {
+            width: 440px;
+            border-top: 2px solid #A76E00;
+            margin-left: 20px;
+        }
+    }
+
+    &__border5 {
+        @media screen and (min-width: 724px) {
+
+
+            @media screen and (min-width: 724px) {
+                width: 330px;
+                border-top: 2px solid #A76E00;
+                margin-left: 20px;
+            }
+
+            @media screen and (min-width: 1380px) {
+                width: 359px;
+            }
+        }
+    }
+
+    &__border6 {
+        @media screen and (min-width: 724px) {
+            width: 100px;
+            border-top: 2px solid #A76E00;
+            margin-left: 20px;
+        }
+
+        @media screen and (min-width: 1380px) {
+            width: 105px;
+        }
+    }
+
+    &__services {
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
 
         @media screen and (min-width: 724px) {
             border-radius: 8px;
@@ -66,6 +154,10 @@
             width: 604px;
             height: 240px;
             background-color: #F8F1E9;
+            margin-left: 100px;
+            margin-top: 24px;
+            margin-bottom: 40px;
+            gap: 8px;
         }
 
         @media screen and (min-width: 1380px) {
@@ -73,7 +165,87 @@
             padding: 12px 0px;
             width: 652px;
             height: 256px;
+            margin-left: 0;
+            margin-top: 0;
 
+        }
+    }
+
+    &__page {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: #3D3C39;
+
+
+        @media screen and (min-width: 724px) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 133%;
+            padding: 8px 4px;
+        }
+
+        @media screen and (min-width: 1380px) {
+            font-size: 28px;
+            line-height: 129%
+        }
+    }
+
+    &__page:nth-child(1) {
+
+        @media screen and (min-width: 724px) {
+            padding-left: 30px;
+        }
+    }
+
+    &__page:nth-child(2) {
+        padding-left: 16px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 15px;
+        }
+    }
+
+    &__page:nth-child(3) {
+        padding-left: 32px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 111px;
+        }
+    }
+
+    &__page:nth-child(4) {
+        padding-left: 48px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 234px;
+        }
+    }
+
+
+    &__list {
+        border-bottom: 2px solid #A76E00;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        @media screen and (min-width: 724px) {
+            border-radius: 8px;
+            padding: 12px 9px;
+            width: 604px;
+            height: 240px;
+            background-color: #F8F1E9;
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 1380px) {
+            border-radius: 8px;
+            padding: 12px 0px;
+            width: 652px;
+            height: 256px;
         }
     }
 
@@ -82,6 +254,57 @@
         font-size: 14px;
         line-height: 129%;
         color: #3D3C39;
+
+
+        @media screen and (min-width: 724px) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 133%;
+            padding: 8px 4px;
+        }
+
+        @media screen and (min-width: 1380px) {
+            font-size: 28px;
+            line-height: 129%
+        }
+    }
+
+    &__item:nth-child(1) {
+
+
+        @media screen and (min-width: 724px) {
+            padding-left: 15px;
+        }
+    }
+
+    &__item:nth-child(2) {
+        padding-left: 16px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 0px;
+        }
+    }
+
+    &__item:nth-child(3) {
+        padding-left: 32px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 0px;
+        }
+    }
+
+    &__item:nth-child(4) {
+        padding-left: 48px;
+
+        @media screen and (min-width: 724px) {
+            padding-left: 0px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__butn {
@@ -98,7 +321,9 @@
         display: none;
 
         @media screen and (min-width: 724px) {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         @media screen and (min-width: 1380px) {}
