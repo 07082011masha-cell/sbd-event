@@ -816,4 +816,329 @@ body {
   font-weight: normal;
   line-height: 1.3;
   margin: 0;
+}
+
+.advantage {
+  padding-top: 40px;
+  padding-bottom: 51px;
+}
+@media screen and (min-width: 724px) {
+  .advantage {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage {
+    padding-top: 92px;
+    padding-bottom: 48px;
+  }
+}
+.advantage__title {
+  width: 310px;
+  color: #a76e00;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+@media screen and (min-width: 724px) {
+  .advantage__title {
+    width: 100%;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__title {
+    width: 539px;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: left;
+    position: relative;
+  }
+  .advantage__title::after {
+    content: "";
+    position: absolute;
+    left: 590px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 765px;
+    height: 1.5px;
+    background-color: #a76e00;
+  }
+}
+@media screen and (min-width: 724px) {
+  .advantage__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 91px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__box {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 724px) {
+  .advantage__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__wrapper {
+    width: 55%;
+  }
+}
+.advantage__location {
+  max-width: 327px;
+  width: 100%;
+  color: #3d3c39;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media screen and (min-width: 724px) {
+  .advantage__location {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__location {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 724px) {
+  .advantage__dots {
+    display: none;
+  }
+}
+.advantage__hide {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .advantage__hide {
+    display: inline;
+  }
+}
+.advantage__prop {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .advantage__prop {
+    display: inline;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 18px;
+    color: #3d3c39;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__prop {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 32px;
+  }
+}
+.advantage__place {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .advantage__place {
+    display: inline;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3d3c39;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__place {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.advantage__about {
+  width: 343px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f8f1e9;
+  flex-shrink: 0;
+  color: #04867e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.advantage__about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 285px;
+  height: 1.5px;
+  background-color: #a76e00;
+  left: 0;
+  bottom: -16px;
+  margin-left: 29px;
+}
+@media screen and (min-width: 724px) {
+  .advantage__about::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 724px) {
+  .advantage__about {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #3d3c39;
+    background: #fdfdfd;
+    margin-top: 8px;
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__about {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+}
+.advantage__about:hover {
+  background: #04867e;
+  color: #f8f1e9;
+}
+.advantage__list {
+  margin-top: 32px;
+  position: relative;
+}
+.advantage__list::after {
+  content: "";
+  position: absolute;
+  left: 285px;
+  top: 0;
+  width: 1.5px;
+  height: 444px;
+  background-color: #a76e00;
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .advantage__list::after {
+    display: block;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__list::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 724px) {
+  .advantage__list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__list {
+    margin-top: 0;
+    width: 38%;
+  }
+}
+.advantage__item {
+  padding-bottom: 16px;
+}
+.advantage__a {
+  color: #da9d27;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+@media screen and (min-width: 724px) {
+  .advantage__a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__a {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+}
+.advantage__more {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .advantage__more {
+    display: inline;
+  }
+}
+.advantage__btn {
+  width: 343px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #da9d27;
+  background: #fdfdfd;
+  color: #a76e00;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: Montserrat;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 724px) {
+  .advantage__btn {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .advantage__btn {
+    width: 240px;
+    line-height: 22px;
+    font-size: 18px;
+    transform: translateY(120px);
+  }
+}
+.advantage__btn:hover {
+  background: #a76e00;
+  color: #f8f1e9;
 }/*# sourceMappingURL=main.css.map */
