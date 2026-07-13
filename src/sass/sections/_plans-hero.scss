@@ -1,1 +1,122 @@
 @use "../base/variables" as *;
+
+.plans-hero {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/pexels-matheus.png);
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 496px;
+
+    @media screen and (min-width: 724px) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/pexels-alexandra-kollstrem.png);
+        padding-top: 31px;
+        padding-bottom: 75px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        display: none;
+    }
+
+    &__box {
+        position: relative;
+        margin-bottom: 80px;
+
+
+        @media screen and (min-width: 724px) {
+            display: flex;
+            justify-content: end;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__input {
+        border: 1px solid #FDFDFD;
+        border-radius: 4px;
+        padding: 8px;
+        width: 343px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        background-color: #979797;
+
+        @media screen and (min-width: 724px) {
+            background-color: transparent;
+            width: 174px;
+        }
+    }
+
+    &__input::placeholder {
+        color: #FDFDFD;
+
+        @media screen and (min-width: 724px) {
+            color: #979797;
+        }
+    }
+
+    &__seach {
+        fill: #FDFDFD;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        color: #FDFDFD;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 724px) {
+            font-size: 56px;
+            line-height: 114%;
+            color: #FDFDFD;
+            width: 645px;
+        }
+    }
+
+    &__width
+    {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 724px) {
+            justify-content: end;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #979797;
+        width: 316px;
+
+        @media screen and (min-width: 724px) {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 113%;
+            width: 342px;
+        }
+    }
+
+    &__div {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 724px) {
+            display: none;
+        }
+    }
+
+    &__tablet {
+        display: none;
+
+        @media screen and (min-width: 724px) {
+            display: block;
+        }
+    }
+
+}
