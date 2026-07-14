@@ -17,7 +17,7 @@
         font-weight: 500;
         font-size: 56px;
         line-height: 114%;
-        color: #A76E00;
+        color: $gold-text;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,7 +31,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 160%;
-        color: #3D3C39;
+        color: $grey-bttn;
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -39,7 +39,7 @@
     }
 
     &__button {
-        border-bottom: 1px solid #3D3C39;
+        border-bottom: 1px solid $grey-bttn;
         border-radius: 4px;
         padding: 10px 16px;
         width: 240px;
@@ -47,8 +47,8 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 122%;
-        background: #FDFDFD;
-        color: #04867E;
+        background: $white-text;
+        color: $green-text;
         display: flex;
         align-items: center;
         justify-content: center;
