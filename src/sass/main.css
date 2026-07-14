@@ -2653,6 +2653,8 @@ body {
   font-size: 40px;
   line-height: 120%;
   color: #FDFDFD;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 724px) {
   .serving-hero__service {
@@ -2662,5 +2664,297 @@ body {
     font-weight: 500;
     font-size: 56px;
     line-height: 114%;
+  }
+}
+
+.opportunities {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 724px) {
+  .opportunities {
+    padding-top: 80px;
+    padding-bottom: 54px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities {
+    padding-top: 100px;
+  }
+}
+.opportunities__title {
+  padding: 8px;
+  width: 326px;
+  height: 96px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #A76E00;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__title {
+    width: 557px;
+    height: 64px;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__title {
+    width: 773px;
+    height: 80px;
+    font-size: 56px;
+    line-height: 114%;
+    margin-bottom: 44px;
+  }
+}
+.opportunities__border {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__border {
+    display: block;
+    border: 1px solid #A76E00;
+    width: 547px;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+.opportunities__right {
+  display: flex;
+}
+.opportunities__tablet {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__tablet {
+    display: block;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__tablet {
+    display: none;
+  }
+}
+.opportunities__desktop {
+  display: contents;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__desktop {
+    display: flex;
+    margin-bottom: 24px;
+  }
+}
+.opportunities__cover {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__cover {
+    margin-right: 24px;
+    height: 358px;
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__cover {
+    margin-right: 0px;
+    margin-left: 138px;
+    height: 460px;
+  }
+}
+.opportunities__image {
+  border: 1px solid #f4e2e2;
+  border-radius: 8px;
+  width: 343px;
+  height: 180px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__image {
+    width: 340px;
+    height: 320px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__image {
+    width: 554px;
+    height: 411px;
+    margin-top: 28px;
+  }
+}
+.opportunities__subtitle {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+  }
+}
+.opportunities__text {
+  display: none;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__text {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+  }
+}
+.opportunities__mobile {
+  display: block;
+  width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3D3C39;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__mobile {
+    display: none;
+  }
+}
+.opportunities__mobile2 {
+  display: block;
+  width: 343px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3D3C39;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__mobile2 {
+    display: none;
+  }
+}
+.opportunities__box {
+  margin-bottom: 16px;
+  padding: 8px;
+  display: block;
+  width: 343px;
+  height: 130px;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__box {
+    display: none;
+  }
+}
+.opportunities__div {
+  display: contents;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__div {
+    display: flex;
+  }
+}
+.opportunities__readmore {
+  display: block;
+  border-radius: 4px;
+  padding: 12px;
+  width: 343px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: #04867E;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__readmore {
+    width: 200px;
+    height: 42px;
+    border-bottom: 1px solid #3D3C39;
+    background-color: #FDFDFD;
+    font-size: 16px;
+    line-height: 113%;
+    color: #04867E;
+    margin-bottom: 0px;
+    margin-right: 302px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__readmore {
+    display: none;
+  }
+}
+.opportunities__button {
+  border: 1px solid #A76E00;
+  border-radius: 4px;
+  padding: 12px 8px;
+  width: 343px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: #A76E00;
+  background-color: transparent;
+}
+@media screen and (min-width: 724px) {
+  .opportunities__button {
+    width: 200px;
+    font-size: 16px;
+    line-height: 113%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__button {
+    padding: 10px 8px;
+    width: 240px;
+    font-size: 18px;
+    line-height: 122%;
+    margin-right: 880px;
+  }
+}
+.opportunities__btn {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .opportunities__btn {
+    display: block;
+    border-bottom: 1px solid #3D3C39;
+    border-radius: 4px;
+    padding: 10px 16px;
+    width: 240px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122%;
+    color: #04867E;
+    background-color: #FDFDFD;
   }
 }/*# sourceMappingURL=main.css.map */
