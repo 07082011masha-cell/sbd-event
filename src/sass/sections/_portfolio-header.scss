@@ -1,1 +1,286 @@
 @use "../base/variables" as *;
+
+.portfolio-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 724px) {
+        padding-top: 9px;
+        padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/pexels-luke.png);
+        background-size: cover;
+        padding-top: 16px;
+        padding-bottom: 240px;
+    }
+
+    &__position {
+        display: flex;
+    }
+
+    &__section {
+        display: contents;
+
+        @media screen and (min-width: 1380px) {
+            display: block;
+        }
+    }
+
+    &__white {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 1380px) {
+            display: contents;
+        }
+    }
+
+    &__logotip {
+
+        display: none;
+
+        @media screen and (min-width: 1380px) {
+            width: auto;
+            height: auto;
+            font-family: "Montserrat";
+            color: #DA9D27;
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 125%;
+            display: block;
+            margin-right: 75px;
+            margin-top: 40px;
+        }
+    }
+
+    &__logo {
+        width: auto;
+        height: auto;
+        font-family: "Montserrat";
+        color: #DA9D27;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+
+        @media screen and (min-width: 724px) {
+            margin-right: 103px;
+            height: auto;
+            width: auto;
+            font-size: 56px;
+            line-height: 114%;
+        }
+
+        @media screen and (min-width: 1380px) {
+            margin-right: 0;
+            font-size: 64px;
+            line-height: 125%;
+            display: none;
+        }
+    }
+
+    &__div {
+        display: contents;
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            justify-content: end;
+            border-bottom: 2px solid #979797;
+        }
+    }
+
+    &__box {
+        display: none;
+
+        @media screen and (min-width: 724px) {}
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            gap: 128px;
+        }
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width: 724px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            gap: 40px;
+            align-items: end;
+        }
+    }
+
+    &__svg {
+        height: 24px;
+        width: 24px;
+        fill: #FDFDFD;
+    }
+
+    &__ext {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 113%;
+        color: #A76E00;
+    }
+
+    &__info {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 113%;
+        color: #A76E00;
+    }
+
+    &__login {
+        font-family: "Montserrat";
+        color: #A76E00;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        width: 184px;
+
+        @media screen and (min-width: 724px) {
+            width: auto;
+            margin-right: 193px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 122%;
+        }
+
+        @media screen and (min-width: 1380px) {
+            margin-right: 0;
+            display: block;
+            margin-bottom: 19px;
+        }
+    }
+
+    &__burger {}
+
+    &__menu {
+        border: 1px solid #A76E00;
+        border-radius: 4px;
+        padding: 10px 7px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        fill: #A76E00;
+
+        @media screen and (min-width: 1380px) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        width: 26px;
+        height: 20px;
+    }
+
+    &__nav {
+        display: flex;
+        position: relative;
+    }
+
+    &__social {
+        display: none;
+
+        @media screen and (min-width: 724px) {}
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            gap: 8px;
+        }
+
+    }
+
+    &__item {}
+
+    &__page {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: #A76E00;
+    }
+
+    &__input {
+        border: 1px solid #979797;
+        border-radius: 4px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        background-color: #979797;
+        padding: 8px;
+        width: 343px;
+        height: 40px;
+        color: #FDFDFD;
+        display: none;
+
+        @media screen and (min-width: 724px) {
+            width: 174px;
+            height: 40px;
+            color: #979797;
+            background-color: rgba(97, 97, 97, 0);
+        }
+
+        @media screen and (min-width: 1380px) {
+            display: block;
+            margin-left: 39px;
+            margin-top: 17px;
+        }
+    }
+
+    &__seach {
+        width: 24px;
+        height: 24px;
+        display: none;
+
+        @media screen and (min-width: 1380px) {
+            display: block;
+            fill: #FDFDFD;
+            position: absolute;
+            top: 25px;
+            right: 10px;
+        }
+    }
+
+    &__hero
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        padding: 8px;
+        width: 974px;
+        height: 80px;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 114%;
+        color: #FDFDFD;
+        margin-top: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
