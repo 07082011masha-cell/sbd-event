@@ -1,19 +1,30 @@
 @use "../base/variables" as *;
 
 .hero {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/pexels-cottonbro.png);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/organiser-mobile@1x.webp);
     background-size: cover;
     padding-top: 64px;
     padding-bottom: 274px;
 
-    @media screen and (min-width: 724px)
-    {
-        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/pexels.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/organiser-mobile@2x.webp);
+    }
+
+    @media screen and (min-width: 724px) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/organiser-tablet@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/organiser-tablet@2x.webp);
+        }
     }
 
     @media screen and (min-width: 1380px) {
         display: none;
-    }
+    } 
 
     &__box {
         display: flex;

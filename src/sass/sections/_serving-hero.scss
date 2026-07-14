@@ -1,15 +1,27 @@
 @use "../base/variables" as *;
 
 .serving-hero {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/pexels-gillian.png);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/serving-mobile@1x.webp);
     background-size: cover;
     padding-top: 64px;
     padding-bottom: 544px;
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/serving-mobile@2x.webp);
+    }
+
     @media screen and (min-width: 724px) {
-        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/pexels-alem-sánchez.png);
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/serving-tablet@1x.webp);
         padding-top: 32px;
         padding-bottom: 178px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/serving-tablet@2x.webp);
+        }
     }
 
     @media screen and (min-width: 1380px) {
@@ -61,8 +73,7 @@
         right: 10px;
     }
 
-    &__div
-    {
+    &__div {
         display: flex;
         justify-content: center;
     }
