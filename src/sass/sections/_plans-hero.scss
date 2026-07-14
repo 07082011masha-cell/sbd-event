@@ -28,7 +28,7 @@
     }
 
     &__input {
-        border: 1px solid #FDFDFD;
+        border: 1px solid $white-text;
         border-radius: 4px;
         padding: 8px;
         width: 343px;
@@ -36,7 +36,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 122%;
-        background-color: #979797;
+        background-color: $white-secondary;
 
         @media screen and (min-width: 724px) {
             background-color: transparent;
@@ -45,15 +45,15 @@
     }
 
     &__input::placeholder {
-        color: #FDFDFD;
+        color: $white-text;
 
         @media screen and (min-width: 724px) {
-            color: #979797;
+            color: $white-secondary;
         }
     }
 
     &__seach {
-        fill: #FDFDFD;
+        fill: $white-text;
         width: 24px;
         height: 24px;
         position: absolute;
@@ -65,19 +65,18 @@
         font-weight: 500;
         font-size: 40px;
         line-height: 120%;
-        color: #FDFDFD;
+        color: $white-text;
         margin-bottom: 8px;
 
         @media screen and (min-width: 724px) {
             font-size: 56px;
             line-height: 114%;
-            color: #FDFDFD;
+            color: $white-text;
             width: 645px;
         }
     }
 
-    &__width
-    {
+    &__width {
         display: flex;
         justify-content: center;
 
@@ -90,7 +89,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        color: #979797;
+        color: $white-secondary;
         width: 316px;
 
         @media screen and (min-width: 724px) {
@@ -117,5 +116,4 @@
             display: block;
         }
     }
-
 }
