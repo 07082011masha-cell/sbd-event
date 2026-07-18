@@ -540,42 +540,71 @@ body {
   text-align: center;
   position: relative;
 }
+.about__group1 {
+  display: flex;
+  flex-direction: row;
+}
 .about__img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  height: 240px;
   border-radius: 12px;
 }
 .about__line {
   width: 100%;
   border: none;
   border-top: 2px solid #b38642;
-  margin: 20px 0;
+  margin-top: 64px;
+  margin-bottom: 40px;
+  margin-left: 7px;
 }
 .about__title {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #A76E00;
+  text-align: left;
+  padding-left: 7px;
 }
 .about__smalltext {
-  color: #4a286d;
-  margin-bottom: 20px;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3E1063;
+  margin-top: 8px;
+  margin-right: 148px;
+  font-style: bold;
 }
 .about__chat {
   display: inline-block;
   padding: 15px 30px;
-  width: 100%;
-  max-width: 350px;
-  background-color: #f7f3ee;
-  color: #1b6b65;
-  text-decoration: none;
-  border-radius: 8px;
+  margin-top: 8px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: #04867E;
   margin-bottom: 25px;
+  background-color: #f7f3ee;
+  width: 100%;
 }
 .about__wholetext {
   margin-bottom: 25px;
   order: 2;
 }
+.about__text1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #3D3C39;
+}
 .about__text2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #3D3C39;
   display: none;
 }
 .about__details {
@@ -584,12 +613,15 @@ body {
   width: 100%;
   max-width: 350px;
   background-color: #f7f3ee;
-  color: #1b6b65;
-  cursor: pointer;
+  color: #04867E;
   order: 3;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
 }
 .about__details span {
   display: none;
@@ -607,7 +639,7 @@ body {
   content: "Згорнути";
   font-size: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 724px) {
   .about .container {
     display: flex;
     flex-direction: row;
@@ -651,7 +683,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1380px) {
   .about .container {
     display: grid;
     grid-template-columns: 200px 1fr 250px;
