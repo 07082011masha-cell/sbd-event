@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+
 .about {
   padding: 40px 0;
 
@@ -10,10 +11,13 @@
     position: relative;
   }
 
+  &__group1 {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    height: 240px;
     border-radius: 12px;
   }
 
@@ -21,29 +25,44 @@
     width: 100%;
     border: none;
     border-top: 2px solid #b38642;
-    margin: 20px 0;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    margin-left: 7px;
   }
 
   &__title {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: #A76E00;
+    text-align: left;
+    padding-left: 7px;
   }
 
   &__smalltext {
-    color: #4a286d;
-    margin-bottom: 20px;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3E1063;
+    margin-top: 8px;
+    margin-right: 148px;
+    font-style: bold;
   }
 
   &__chat {
     display: inline-block;
     padding: 15px 30px;
-    width: 100%;
-    max-width: 350px;
-    background-color: #f7f3ee;
-    color: #1b6b65;
-    text-decoration: none;
-    border-radius: 8px;
+    margin-top: 8px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    color: #04867E;
     margin-bottom: 25px;
+    background-color: #f7f3ee;
+    width: 100%;
   }
 
   &__wholetext {
@@ -51,8 +70,21 @@
     order: 2;
   }
 
+  &__text1 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+  }
+
   &__text2 {
-    display: none; 
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+    display: none;
   }
 
 
@@ -62,10 +94,13 @@
     width: 100%;
     max-width: 350px;
     background-color: #f7f3ee;
-    color: #1b6b65;
-    cursor: pointer;
+    color: #04867E;
     order: 3;
-    user-select: none; 
+    user-select: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
 
     span {
       display: none;
@@ -78,26 +113,26 @@
   }
 
 
-  &__trigger:checked ~ &__wholetext {
+  &__trigger:checked~&__wholetext {
     .about__text2 {
       display: block;
     }
   }
 
 
-  &__trigger:checked ~ &__details {
+  &__trigger:checked~&__details {
     font-size: 0;
-    
+
     &::after {
-      content: "Згорнути"; 
-      font-size: 1rem; 
+      content: "Згорнути";
+      font-size: 1rem;
     }
   }
 
 
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 724px) {
     .container {
       display: flex;
       flex-direction: row;
@@ -120,7 +155,7 @@
     &__wholetext {
       width: 60%;
       margin-left: auto;
-      
+
       .about__text2 {
         display: block;
       }
@@ -153,7 +188,7 @@
 
 
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1380px) {
     .container {
       display: grid;
       grid-template-columns: 200px 1fr 250px;
