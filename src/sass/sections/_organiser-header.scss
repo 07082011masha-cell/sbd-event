@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+
 .header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -8,10 +10,16 @@
     }
 
     @media screen and (min-width: 1380px) {
-        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/pexels.png);
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/organiser-desktop@1x.webp);
         background-size: cover;
         padding-top: 36px;
         padding-bottom: 281px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/organiser-desktop@2x.webp);
+        }
     }
 
     &__position {
@@ -44,7 +52,7 @@
             width: auto;
             height: auto;
             font-family: "Montserrat";
-            color: #DA9D27;
+            color: $gold-logo;
             font-weight: 800;
             font-size: 64px;
             line-height: 125%;
@@ -58,7 +66,7 @@
         width: auto;
         height: auto;
         font-family: "Montserrat";
-        color: #DA9D27;
+        color: $gold-logo;
         font-weight: 800;
         font-size: 40px;
         line-height: 120%;
@@ -88,7 +96,7 @@
         @media screen and (min-width: 1380px) {
             display: flex;
             justify-content: end;
-            border-bottom: 2px solid #979797;
+            border-bottom: 2px solid $white-secondary;
         }
     }
 
@@ -126,7 +134,7 @@
     &__svg {
         height: 24px;
         width: 24px;
-        fill: #FDFDFD;
+        fill: $white-text;
     }
 
     &__ext {
@@ -134,7 +142,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 113%;
-        color: #A76E00;
+        color: $gold-text;
     }
 
     &__info {
@@ -142,12 +150,12 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 113%;
-        color: #A76E00;
+        color: $gold-text;
     }
 
     &__login {
         font-family: "Montserrat";
-        color: #A76E00;
+        color: $gold-text;
         font-weight: 700;
         font-size: 14px;
         line-height: 129%;
@@ -174,14 +182,14 @@
     &__burger {}
 
     &__menu {
-        border: 1px solid #A76E00;
+        border: 1px solid $gold-text;
         border-radius: 4px;
         padding: 10px 7px;
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
-        fill: #A76E00;
+        fill: $gold-text;
 
         @media screen and (min-width: 1380px) {
             display: none;
@@ -191,6 +199,7 @@
     &__icon {
         width: 26px;
         height: 20px;
+        fill: black;
     }
 
     &__nav {
@@ -217,27 +226,27 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 122%;
-        color: #A76E00;
+        color: $gold-text;
     }
 
     &__input {
-        border: 1px solid #979797;
+        border: 1px solid $white-secondary;
         border-radius: 4px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 18px;
         line-height: 122%;
-        background-color: #979797;
+        background-color: $white-secondary;
         padding: 8px;
         width: 343px;
         height: 40px;
-        color: #FDFDFD;
+        color: $white-text;
         display: none;
 
         @media screen and (min-width: 724px) {
             width: 174px;
             height: 40px;
-            color: #979797;
+            color: $white-secondary;
             background-color: rgba(97, 97, 97, 0);
         }
 
@@ -255,7 +264,7 @@
 
         @media screen and (min-width: 1380px) {
             display: block;
-            fill: #FDFDFD;
+            fill: $white-text;
             position: absolute;
             top: 25px;
             right: 10px;
@@ -275,7 +284,7 @@
 
     &__title {
         font-family: "Montserrat";
-        color: #FDFDFD;
+        color: $white-text;
         font-weight: 500;
         font-size: 38px;
         line-height: 126%;
@@ -296,7 +305,7 @@
 
     &__text {
         font-family: "Montserrat";
-        color: #979797;
+        color: $white-secondary;
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
@@ -316,10 +325,10 @@
     }
 
     &__butn {
-        border-bottom: 1px solid #3D3C39;
+        border-bottom: 1px solid $grey-bttn;
         border-radius: 4px;
         font-family: "Montserrat";
-        color: #04867E;
+        color: $green-text;
         padding: 12px;
         width: 343px;
         height: 42px;

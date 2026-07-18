@@ -1,1 +1,245 @@
 @use "../base/variables" as *;
+
+.about {
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  &__group1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    height: 240px;
+    border-radius: 12px;
+  }
+
+  &__line {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #b38642;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    margin-left: 7px;
+  }
+
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: #A76E00;
+    text-align: left;
+    padding-left: 7px;
+  }
+
+  &__smalltext {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3E1063;
+    margin-top: 8px;
+    margin-right: 148px;
+    font-style: bold;
+  }
+
+  &__chat {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 8px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    color: #04867E;
+    margin-bottom: 25px;
+    background-color: #f7f3ee;
+    width: 100%;
+  }
+
+  &__wholetext {
+    margin-bottom: 25px;
+    order: 2;
+  }
+
+  &__text1 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+  }
+
+  &__text2 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #3D3C39;
+    display: none;
+  }
+
+
+  &__details {
+    display: inline-block;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #f7f3ee;
+    color: #04867E;
+    order: 3;
+    user-select: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+
+    span {
+      display: none;
+    }
+  }
+
+
+  &__trigger {
+    display: none;
+  }
+
+
+  &__trigger:checked~&__wholetext {
+    .about__text2 {
+      display: block;
+    }
+  }
+
+
+  &__trigger:checked~&__details {
+    font-size: 0;
+
+    &::after {
+      content: "Згорнути";
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+  @media (min-width: 724px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    &__img {
+      width: 35%;
+      max-width: none;
+      margin-right: 5%;
+    }
+
+    &__title {
+      width: 60%;
+      font-size: 2.5rem;
+    }
+
+    &__wholetext {
+      width: 60%;
+      margin-left: auto;
+
+      .about__text2 {
+        display: block;
+      }
+    }
+
+    &__chat {
+      width: auto;
+      order: 3;
+      margin-top: 20px;
+      border: 1px solid #1b6b65;
+      background-color: transparent;
+    }
+
+    &__smalltext {
+      width: 35%;
+      order: 4;
+      margin-top: 15px;
+    }
+
+    &__line {
+      width: 100%;
+      order: 5;
+    }
+
+    &__details {
+      display: none;
+    }
+  }
+
+
+
+
+  @media (min-width: 1380px) {
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 250px;
+      gap: 30px;
+      align-items: center;
+      text-align: left;
+    }
+
+    &__img {
+      grid-column: 1;
+      width: 100%;
+    }
+
+    &__title {
+      grid-column: 2;
+    }
+
+    &__line {
+      grid-column: 2;
+      width: 100px;
+      margin: 0 0 15px 0;
+    }
+
+    &__wholetext {
+      grid-column: 2;
+      margin: 0;
+
+
+    }
+
+    &__chat {
+      grid-column: 3;
+      grid-row: 1;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__smalltext {
+      grid-column: 3;
+      grid-row: 1;
+      align-self: start;
+      margin-top: -40px;
+      width: 100%;
+      text-align: right;
+    }
+
+    &__details {
+      display: inline-block;
+      grid-column: 2;
+      width: auto;
+      margin: 20px auto 0 auto;
+    }
+  }
+}

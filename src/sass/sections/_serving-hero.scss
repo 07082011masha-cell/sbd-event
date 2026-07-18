@@ -1,1 +1,100 @@
 @use "../base/variables" as *;
+
+.serving-hero {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/serving-mobile@1x.webp);
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 544px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/mobile/serving-mobile@2x.webp);
+    }
+
+    @media screen and (min-width: 724px) {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/serving-tablet@1x.webp);
+        padding-top: 32px;
+        padding-bottom: 178px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/serving-tablet@2x.webp);
+        }
+    }
+
+    @media screen and (min-width: 1380px) {
+        display: none;
+    }
+
+    &__hero {
+        position: relative;
+        margin-bottom: 80px;
+
+        @media screen and (min-width: 724px) {
+            display: flex;
+            justify-content: end;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__input {
+        border: 1px solid $white-text;
+        border-radius: 4px;
+        padding: 8px;
+        width: 343px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        background-color: $white-secondary;
+
+        @media screen and (min-width: 724px) {
+            background-color: transparent;
+            width: 174px;
+        }
+    }
+
+    &__input::placeholder {
+        color: $white-text;
+
+        @media screen and (min-width: 724px) {
+            color: $white-secondary;
+        }
+    }
+
+    &__seach {
+        fill: $white-text;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__service {
+        width: 227px;
+        height: 64px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        color: $white-text;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 724px) {
+            padding: 8px;
+            width: 248px;
+            height: 80px;
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 114%;
+        }
+    }
+}

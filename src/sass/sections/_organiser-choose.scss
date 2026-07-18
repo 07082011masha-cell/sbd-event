@@ -4,23 +4,41 @@
     padding-top: 40px;
     padding-bottom: 112px;
     background-color: #979797;
-    background-image: url(../img/vova/mobile/vecpic.png);
+    background-image: url(../img/vova/mobile/choose-mobile.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto;
 
+    // @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     background-image: url(../img/vova/mobile/choose-mobile@2x.webp);
+    // }
+
     @media screen and (min-width: 724px) {
         padding-top: 89px;
         padding-bottom: 48px;
-        background-image: url(../img/vova/tablet/vec-tablet.png);
+        background-image: url(../img/vova/tablet/choose-tablet.png);
         background-position: center 160px;
+
+        // @media (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image: url(../img/vova/tablet/choose-tablet@2x.webp);
+        // }
     }
 
     @media screen and (min-width: 1380px) {
         padding-top: 100px;
         padding-bottom: 48px;
         background-position: center;
-        background-image: url(../img/vova/desktop/group.png);
+        background-image: url(../img/vova/desktop/choose-desktop.png);
+
+        // @media (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image: url(../img/vova/desktop/choose-desktop@2x.webp);
+        // }
     }
 
     &__title {
