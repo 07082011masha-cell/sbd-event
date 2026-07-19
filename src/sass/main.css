@@ -556,42 +556,74 @@ body {
   text-align: center;
   position: relative;
 }
+.about__group1 {
+  display: flex;
+  flex-direction: row;
+}
 .about__img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  height: 240px;
   border-radius: 12px;
 }
 .about__line {
   width: 100%;
   border: none;
   border-top: 2px solid #b38642;
-  margin: 20px 0;
+  margin-top: 64px;
+  margin-bottom: 40px;
+  margin-left: 7px;
+}
+.about__line2 {
+  display: none;
 }
 .about__title {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #A76E00;
+  text-align: left;
+  padding-left: 7px;
 }
 .about__smalltext {
-  color: #4a286d;
-  margin-bottom: 20px;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3E1063;
+  margin-top: 8px;
+  margin-right: 148px;
+  font-style: bold;
 }
 .about__chat {
   display: inline-block;
   padding: 15px 30px;
-  width: 100%;
-  max-width: 350px;
-  background-color: #f7f3ee;
-  color: #1b6b65;
-  text-decoration: none;
-  border-radius: 8px;
+  margin-top: 8px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: #04867E;
   margin-bottom: 25px;
+  background-color: #f7f3ee;
+  width: 100%;
 }
 .about__wholetext {
   margin-bottom: 25px;
   order: 2;
 }
+.about__text1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #3D3C39;
+}
 .about__text2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #3D3C39;
   display: none;
 }
 .about__details {
@@ -600,12 +632,15 @@ body {
   width: 100%;
   max-width: 350px;
   background-color: #f7f3ee;
-  color: #1b6b65;
-  cursor: pointer;
+  color: #04867E;
   order: 3;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
 }
 .about__details span {
   display: none;
@@ -623,7 +658,13 @@ body {
   content: "Згорнути";
   font-size: 1rem;
 }
-@media (min-width: 768px) {
+.about__line2 {
+  display: none;
+}
+.about__chat2 {
+  display: none;
+}
+@media (min-width: 724px) {
   .about .container {
     display: flex;
     flex-direction: row;
@@ -637,79 +678,174 @@ body {
     margin-right: 5%;
   }
   .about__title {
-    width: 60%;
-    font-size: 2.5rem;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    padding-left: 0px;
+    padding-top: 80px;
   }
   .about__wholetext {
-    width: 60%;
-    margin-left: auto;
+    width: 444px;
+    position: absolute;
+    top: 152px;
+    right: 32px;
   }
   .about__wholetext .about__text2 {
     display: block;
   }
   .about__chat {
     width: auto;
-    order: 3;
-    margin-top: 20px;
     border: 1px solid #1b6b65;
     background-color: transparent;
+    display: none;
+  }
+  .about__chat2 {
+    display: inline-block;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    color: #04867E;
+    background: transparent;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 200px;
+    height: 42px;
   }
   .about__smalltext {
-    width: 35%;
-    order: 4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    width: 200px;
     margin-top: 15px;
+    text-align: center;
+  }
+  .about__group3 {
+    display: flex;
+    align-items: center;
+    position: absolute;
   }
   .about__line {
-    width: 100%;
-    order: 5;
+    display: none;
+  }
+  .about__line2 {
+    display: block;
+    width: 444px;
+    border: none;
+    border-top: 2px solid #b38642;
+    margin-left: 240px;
+    margin-bottom: 48px;
   }
   .about__details {
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1380px) {
   .about .container {
-    display: grid;
-    grid-template-columns: 200px 1fr 250px;
-    gap: 30px;
-    align-items: center;
-    text-align: left;
+    display: block;
+    position: relative;
+    min-height: 400px;
+  }
+  .about__group1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .about__img {
-    grid-column: 1;
-    width: 100%;
+    width: 210px;
+    height: 210px;
+    margin-right: 32px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__title {
-    grid-column: 2;
-  }
-  .about__line {
-    grid-column: 2;
-    width: 100px;
-    margin: 0 0 15px 0;
-  }
-  .about__wholetext {
-    grid-column: 2;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 114%;
+    padding-top: 88px;
     margin: 0;
   }
-  .about__chat {
-    grid-column: 3;
-    grid-row: 1;
-    width: 100%;
-    margin-bottom: 10px;
+  .about__line2 {
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 242px;
+    width: 95px;
+    margin: 0;
   }
-  .about__smalltext {
-    grid-column: 3;
-    grid-row: 1;
-    align-self: start;
-    margin-top: -40px;
-    width: 100%;
-    text-align: right;
+  .about__wholetext {
+    position: absolute;
+    top: 165px;
+    left: 367px;
+    width: 671px;
+    margin: 0;
+  }
+  .about__wholetext .about__text2 {
+    display: none;
+  }
+  .about__trigger:checked ~ .about__wholetext .about__text2 {
+    display: block;
   }
   .about__details {
+    position: absolute;
+    top: 250px;
+    left: 930px;
     display: inline-block;
-    grid-column: 2;
     width: auto;
-    margin: 20px auto 0 auto;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding: 10px 61px;
+  }
+  .about__trigger:checked ~ .about__details {
+    top: 350px;
+    font-size: 0;
+  }
+  .about__trigger:checked ~ .about__details::after {
+    content: "Згорнути";
+    font-size: 14px;
+  }
+  .about__group3 {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    width: auto;
+    display: block;
+  }
+  .about__smalltext {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    white-space: nowrap;
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    margin-right: 40px;
+    font-style: normal;
+  }
+  .about__chat2 {
+    display: none;
+  }
+  .about__chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 125px;
+    right: 0;
+    width: 240px;
+    height: 42px;
+    border: 1px solid #1b6b65;
+    background-color: transparent;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
   }
 }
 
