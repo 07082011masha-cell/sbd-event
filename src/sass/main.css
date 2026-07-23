@@ -722,11 +722,6 @@ body {
     margin-top: 15px;
     text-align: center;
   }
-  .about__group3 {
-    display: flex;
-    align-items: center;
-    position: absolute;
-  }
   .about__line {
     display: none;
   }
@@ -737,6 +732,7 @@ body {
     border-top: 2px solid #b38642;
     margin-left: 240px;
     margin-bottom: 48px;
+    margin-top: 80px;
   }
   .about__details {
     display: none;
