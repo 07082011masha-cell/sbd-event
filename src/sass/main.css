@@ -571,12 +571,9 @@ body {
   margin-top: 64px;
   margin-bottom: 40px;
   margin-left: 7px;
-<<<<<<< HEAD
-=======
 }
 .about__line2 {
   display: none;
->>>>>>> main
 }
 .about__title {
   font-family: "Montserrat";
@@ -661,15 +658,12 @@ body {
   content: "Згорнути";
   font-size: 1rem;
 }
-<<<<<<< HEAD
-=======
 .about__line2 {
   display: none;
 }
 .about__chat2 {
   display: none;
 }
->>>>>>> main
 @media (min-width: 724px) {
   .about .container {
     display: flex;
@@ -3005,7 +2999,6 @@ body {
 }
 
 .services {
-<<<<<<< HEAD
   display: none;
 }
 @media screen and (min-width: 1380px) {
@@ -3035,41 +3028,10 @@ body {
   font-size: 56px;
   line-height: 120%;
   margin-top: 15px;
-=======
-  background-color: #979797;
-  padding: 60px 20px;
-  font-family: sans-serif;
-}
-.services__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.services__header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 50px;
-}
-.services__line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin-right: 40px;
-  width: 896px;
-}
-.services__title {
-  color: #f8f1e9;
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  line-height: 114%;
->>>>>>> main
 }
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
   gap: 30px;
 }
 .services__card {
@@ -3106,15 +3068,6 @@ body {
   height: 260px;
   border-radius: 4px;
   overflow: hidden;
-=======
-  gap: 20px;
-  align-items: center;
-}
-.services__image-wrapper {
-  width: 100%;
-  overflow: hidden;
-  height: 320px;
->>>>>>> main
 }
 .services__image {
   width: 100%;
@@ -3123,7 +3076,6 @@ body {
      object-fit: cover;
   display: block;
 }
-<<<<<<< HEAD
 
 .review {
   padding: 40px 0;
@@ -3336,41 +3288,6 @@ body {
 .review__btn-more:hover {
   color: #bfa15f;
   border-color: #bfa15f;
-=======
-.services__card {
-  background-color: #ffffff;
-  padding: 30px 25px;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.services__card-title {
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 129%;
-  color: #da9d27;
-}
-.services__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.services__list-item {
-  color: #555555;
-  margin-bottom: 12px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 160%;
-  color: #3d3c39;
-}
-.services__list-item:last-child {
-  margin-bottom: 0;
->>>>>>> main
 }
 
 .serving-header {
