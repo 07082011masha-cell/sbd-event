@@ -2823,6 +2823,109 @@ body {
   color: #f8f1e9;
 }
 
+.management {
+  background-color: #939192;
+  padding-top: 100px;
+  padding-bottom: 54px;
+}
+.management__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 724px) {
+  .management__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+.management__visual {
+  position: relative;
+  flex-shrink: 0;
+  width: 320px;
+  height: 320px;
+}
+@media (max-width: 724px) {
+  .management__visual {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
+}
+.management__badge {
+  position: absolute;
+  width: 145px;
+  height: 113px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.management__badge--top {
+  top: 80px;
+  left: -100px;
+  z-index: 1;
+}
+.management__badge--bottom {
+  top: 200px;
+  left: 15px;
+  z-index: 2;
+}
+@media (max-width: 724px) {
+  .management__badge {
+    position: static;
+    width: 130px;
+    padding: 10px;
+  }
+}
+.management__badge-number {
+  font-size: 34px;
+  font-weight: 700;
+  color: #c08737;
+  line-height: 1.1;
+}
+.management__badge-text {
+  font-size: 15px;
+  color: #3b2c4c;
+  margin-top: 4px;
+}
+.management__content {
+  max-width: 650px;
+  width: 100%;
+}
+.management__title {
+  margin-bottom: 86px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #f8f1e9;
+}
+@media (max-width: 724px) {
+  .management__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+.management__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #3e1063;
+  text-align: left;
+}
+
 .events {
   padding-top: 40px;
   padding-bottom: 48px;

@@ -1,1 +1,110 @@
-@use "../base/variables" as *;
+@use '../base/variables' as *;
+
+.management {
+  background-color: #939192;
+  padding-top: 100px;
+  padding-bottom: 54px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 724px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+  }
+
+  &__visual {
+    position: relative;
+    flex-shrink: 0;
+    width: 320px;
+    height: 320px;
+
+    @media (max-width: 724px) {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 15px;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    width: 145px;
+    height: 113px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &--top {
+      top: 80px;
+      left: -100px;
+      z-index: 1;
+    }
+
+    &--bottom {
+      top: 200px;
+      left: 15px;
+      z-index: 2;
+    }
+
+    @media (max-width: 724px) {
+      position: static;
+      width: 130px;
+      padding: 10px;
+    }
+  }
+
+  &__badge-number {
+    font-size: 34px;
+    font-weight: 700;
+    color: #c08737;
+    line-height: 1.1;
+  }
+
+  &__badge-text {
+    font-size: 15px;
+    color: #3b2c4c;
+    margin-top: 4px;
+  }
+
+  &__content {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 86px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 114%;
+    color: $white-fon;
+
+    @media (max-width: 724px) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 113%;
+    color: $blue-information;
+    text-align: left;
+  }
+}
