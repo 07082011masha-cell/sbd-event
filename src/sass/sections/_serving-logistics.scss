@@ -1,1 +1,121 @@
 @use "../base/variables" as *;
+
+
+.logistics {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 724px) {
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 1380px) {
+    padding-top: 108px;
+    padding-bottom: 201px;
+  }
+
+  &__wrapper {
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 724px) {
+      padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      width: 784px;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    color: $gold-text;
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    width: 151px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 724px) {
+      width: 100%;
+      font-size: 40px;
+      line-height: 48px;
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 64px;
+      text-align: right;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -567px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 589px;
+        height: 2px;
+        background-color: $gold-text;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $black-text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    width: 299px;
+
+    @media screen and (min-width: 724px) {
+      width: 523px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      width: 784px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &__link {
+    width: 343px;
+    height: 42px;
+    gap: 8px;
+    border-radius: 4px;
+    background: $white-fon;
+    color: $green-text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 724px) {
+      width: 200px;
+      height: 42px;
+      border-bottom: 1px solid $black-text;
+      background: $white-text;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: 16px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      width: 240px;
+      height: 42px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 16px;
+      margin-right: auto;
+    }
+  }
+}
