@@ -1,1 +1,222 @@
 @use "../base/variables" as *;
+
+.search {
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  &__img {
+    position: relative;
+  }
+
+  &__food {
+    position: absolute;
+  }
+
+  &__celebration {
+    position: absolute;
+    top: 160px;
+    left: 201px;
+  }
+
+  &__cake {
+    position: absolute;
+    top: 415px;
+    left: 502px;
+  }
+
+  &__archive {
+    background-color: $white-fon;
+    border-radius: 8px;
+    width: 440px;
+    height: 704px;
+    margin-left: 900px;
+    display: flex;
+    gap: 88px;
+    padding-top: 16px;
+  }
+
+  &__word {
+    color: $gold-text;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-left: 24px;
+  }
+
+  &__dates {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 264px;
+      top: 336px;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 672px;
+      background-color: #a76e00;
+    }
+  }
+
+  &__months {
+    color: $green-footer;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 103px;
+    margin-top: 21px;
+  }
+
+  &__articles {
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  &__item {
+    width: 250px;
+  }
+
+  &__title {
+    color: $gold-logo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    width: 290px;
+    margin-bottom: 24px;
+  }
+
+  .search__item:nth-child(2) .search__title {
+    width: 250px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 16px;
+    color: $blue-information;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  &__about {
+    color: $black-text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid $black-text;
+    width: 240px;
+    height: 42px;
+    background: $white-text;
+    color: $green-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $green-text;
+      color: $white-fon;
+    }
+  }
+
+  &__calendar {
+    width: 446px;
+  }
+
+  &__text {
+    color: $gold-text;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    padding-bottom: 16px;
+  }
+
+  &__october {
+    color: $green-footer;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__next {
+    color: $green-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__table {
+    width: 440px;
+    border: 2px solid $black-text;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__th {
+    color: $gold-logo;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    border-bottom: 2px solid $black-text;
+  }
+
+  &__td {
+    width: 56px;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1.7px solid $black-text;
+    color: $black-text;
+    font-size: 18px;
+  }
+
+  &__return {
+    color: $green-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
