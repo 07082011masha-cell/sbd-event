@@ -4843,6 +4843,130 @@ body {
   }
 }
 
+.logistics {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 724px) {
+  .logistics {
+    padding-top: 30px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .logistics {
+    padding-top: 108px;
+    padding-bottom: 201px;
+  }
+}
+.logistics__wrapper {
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 724px) {
+  .logistics__wrapper {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .logistics__wrapper {
+    width: 784px;
+    margin-left: auto;
+  }
+}
+.logistics__title {
+  color: #a76e00;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  width: 151px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 724px) {
+  .logistics__title {
+    width: 100%;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .logistics__title {
+    font-size: 56px;
+    line-height: 64px;
+    text-align: right;
+    position: relative;
+  }
+  .logistics__title::before {
+    content: "";
+    position: absolute;
+    left: -567px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 589px;
+    height: 2px;
+    background-color: #a76e00;
+  }
+}
+.logistics__subtitle {
+  color: #3d3c39;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 299px;
+}
+@media screen and (min-width: 724px) {
+  .logistics__subtitle {
+    width: 523px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .logistics__subtitle {
+    width: 784px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.logistics__link {
+  width: 343px;
+  height: 42px;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f8f1e9;
+  color: #04867e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 724px) {
+  .logistics__link {
+    width: 200px;
+    height: 42px;
+    border-bottom: 1px solid #3d3c39;
+    background: #fdfdfd;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .logistics__link {
+    width: 240px;
+    height: 42px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-right: auto;
+  }
+}
+
 .portfolio-header {
   padding-top: 10px;
   padding-bottom: 10px;
