@@ -8,7 +8,6 @@ $breakpoint-lg: 1380px;
 $font-main: sans-serif;
 $transition-speed: 0.3s ease;
 
-// Кнопка
 .btn-primary {
   position: relative;
   display: inline-block;
@@ -25,7 +24,7 @@ $transition-speed: 0.3s ease;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -20px;
     right: -20px;
@@ -44,7 +43,6 @@ $transition-speed: 0.3s ease;
   }
 }
 
-// Секція Новин
 .news {
   padding: 40px 0;
   background-color: $white-text;
@@ -133,7 +131,7 @@ $transition-speed: 0.3s ease;
   }
 }
 
-// Картка новини
+
 .news-card {
   flex: 1;
   display: flex;
