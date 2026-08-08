@@ -144,7 +144,7 @@
 
 
 
-  @media (min-width: 724px) {
+  @media screen and (min-width: 724px) {
     .container {
       display: flex;
       flex-direction: row;
@@ -233,7 +233,7 @@
 
 
 
-  @media (min-width: 1380px) {
+  @media screen and (min-width: 1380px) {
     .container {
       display: block;
       position: relative;

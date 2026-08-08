@@ -102,7 +102,7 @@ display: none;
 }
 
 
-@media (min-width: 724px) {
+@media screen and (min-width: 724px) {
 &__title {
 font-size: 36px;
 }
@@ -121,7 +121,7 @@ transform: rotate(45deg);
 }
 
 
-@media (min-width: 1380px) {
+@media screen and (min-width: 1380px) {
 padding: 60px 40px;
 
 &__title {
