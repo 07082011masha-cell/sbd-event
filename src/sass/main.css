@@ -848,9 +848,6 @@ body {
 
 .meets {
   background-color: #8C8C8C;
-  background-image: url(/src/img/marta/background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
   box-sizing: border-box;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -4375,7 +4372,6 @@ body {
     display: block;
     width: 507px;
     height: 336px;
-    background-color: #04867E;
     position: absolute;
     left: 0;
     top: 37%;
