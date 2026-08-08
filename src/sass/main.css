@@ -665,7 +665,7 @@ body {
 .about__chat2 {
   display: none;
 }
-@media (min-width: 724px) {
+@media screen and (min-width: 724px) {
   .about .container {
     display: flex;
     flex-direction: row;
@@ -739,7 +739,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 1380px) {
+@media screen and (min-width: 1380px) {
   .about .container {
     display: block;
     position: relative;
@@ -930,7 +930,7 @@ body {
 .meets__line {
   display: none;
 }
-@media (min-width: 724px) {
+@media screen and (min-width: 724px) {
   .meets__title {
     font-size: 36px;
   }
@@ -944,7 +944,7 @@ body {
     transform: rotate(45deg);
   }
 }
-@media (min-width: 1380px) {
+@media screen and (min-width: 1380px) {
   .meets {
     padding: 60px 40px;
   }
