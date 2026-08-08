@@ -563,6 +563,7 @@ body {
 .about__img {
   height: 240px;
   border-radius: 12px;
+  margin-top: 80px;
 }
 .about__line {
   width: 100%;
@@ -673,9 +674,10 @@ body {
     align-items: flex-start;
   }
   .about__img {
-    width: 35%;
-    max-width: none;
-    margin-right: 5%;
+    width: 212px;
+    height: 204px;
+    margin-right: 22px;
+    margin-bottom: 38px;
   }
   .about__title {
     font-weight: 500;
@@ -732,7 +734,6 @@ body {
     border-top: 2px solid #b38642;
     margin-left: 240px;
     margin-bottom: 48px;
-    margin-top: 80px;
   }
   .about__details {
     display: none;
