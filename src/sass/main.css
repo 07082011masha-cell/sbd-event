@@ -1809,9 +1809,14 @@ body {
 .tour__group3 {
   display: flex;
   justify-content: center;
-  padding-bottom: 48px;
 }
 @media (min-width: 724px) {
+  .tour {
+    background-image: url(../img/vova/tablet/vector-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+  }
   .tour__group2 {
     margin-left: 60px;
     margin-right: 60px;
@@ -1822,6 +1827,14 @@ body {
   }
 }
 @media (min-width: 1380px) {
+  .tour {
+    padding-top: 70px;
+    padding-bottom: 48px;
+    background-image: url(../img/vova/desktop/vector-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+  }
   .tour__title {
     font-family: "Montserrat";
     font-weight: 500;
@@ -1836,12 +1849,11 @@ body {
     border-top: 1px solid #F8F1E9;
     width: 981px;
     height: 0px;
+    margin-top: 35px;
   }
   .tour__group1 {
     display: flex;
     align-items: center;
-    padding-bottom: 24px;
-    padding-top: 100px;
   }
   .tour__group2 {
     display: flex;
@@ -5157,7 +5169,7 @@ body {
 }
 @media screen and (min-width: 1380px) {
   .serving-header {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/desktop/pexels-alem.png);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../../img/vova/desktop/serving-desktop@1x.webp);
     background-size: cover;
     padding-top: 36px;
     padding-bottom: 281px;
@@ -5165,7 +5177,7 @@ body {
 }
 @media screen and (min-width: 1380px) and (min-device-pixel-ratio: 2), screen and (min-width: 1380px) and (min-resolution: 192dpi), screen and (min-width: 1380px) and (min-resolution: 2dppx) {
   .serving-header {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../img/vova/tablet/plans-tablet@2x.webp);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url(../../img/vova/desktop/serving-desktop@2x.webp);
   }
 }
 .serving-header__position {
@@ -5818,9 +5830,12 @@ body {
 
 .showcase {
   background-color: #979797;
+  position: relative;
 }
 .showcase__img {
-  display: none;
+  position: absolute;
+  bottom: -92px;
+  right: 0px;
 }
 .showcase__line {
   display: none;
@@ -5843,26 +5858,29 @@ body {
   padding-bottom: 50px;
 }
 @media screen and (min-width: 724px) {
+  .showcase__desktop {
+    background-image: url(../img/vova/tablet/vecpic-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+  }
   .showcase__img {
-    display: block;
-    width: 129px;
-    height: 180px;
-    background-color: #3D3C39;
+    display: none;
   }
   .showcase__group {
+    padding-top: 80px;
     display: flex;
-    align-items: center;
-    padding-top: 18px;
-    padding-bottom: 31px;
+    justify-content: end;
+    height: 232px;
   }
   .showcase__group2 {
     display: flex;
-    flex-direction: column;
   }
   .showcase__title {
     font-size: 40px;
     line-height: 1.2;
-    padding-left: 30px;
+    padding-top: 0px;
+    margin-left: 45px;
   }
   .showcase__text {
     font-size: 20px;
@@ -5871,43 +5889,46 @@ body {
   }
 }
 @media screen and (min-width: 1380px) {
-  .showcase__container {
-    padding: 0 80px;
+  .showcase__desktop {
+    background-image: url(../img/vova/desktop/vecpic-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
   }
   .showcase__group {
-    position: relative;
     gap: 0;
+    height: 280px;
+    align-items: end;
+    justify-content: center;
   }
   .showcase__line {
     display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 550px;
+    width: 563px;
     height: 0;
     border: none;
     border-top: 2px solid #F8F1E9;
     margin: 0;
-    z-index: 1;
+    margin-bottom: 136px;
+    margin-right: 40px;
   }
-  .showcase__img {
-    width: 162px;
-    height: 241px;
-    margin-left: 60px;
-    z-index: 1;
+  .showcase__box {
+    display: flex;
+    justify-content: flex-end;
   }
   .showcase__title {
-    margin-left: 326px;
-    margin-top: 60px;
+    margin-top: 0px;
     font-weight: 500;
     font-size: 50px;
     line-height: 114%;
+    display: block;
+    margin-left: 0px;
   }
   .showcase__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-    margin-left: 480px;
+    padding-bottom: 62px;
+    margin-top: 16px;
   }
 }
 
