@@ -100,7 +100,7 @@
     display: none;
   }
 
-  /* ПЛАНШЕТИ */
+  
   @media (min-width: 724px) {
     &__title {
       font-size: 36px;
@@ -119,7 +119,7 @@
     }
   }
 
-  /* ПК / ДЕСКТОП */
+
   @media (min-width: 1380px) {
     padding: 60px 40px;
 

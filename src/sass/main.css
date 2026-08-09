@@ -933,9 +933,6 @@ body {
 .meets__line {
   display: none;
 }
-.meets {
-  /* ПЛАНШЕТИ */
-}
 @media (min-width: 724px) {
   .meets__title {
     font-size: 36px;
@@ -949,9 +946,6 @@ body {
   .meets__toggle:checked ~ .meets__header .meets__arrow {
     transform: rotate(45deg);
   }
-}
-.meets {
-  /* ПК / ДЕСКТОП */
 }
 @media (min-width: 1380px) {
   .meets {
