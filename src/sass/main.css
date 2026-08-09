@@ -846,7 +846,7 @@ body {
 }
 
 .meets {
-  background-color: #8C8C8C;
+  background-color: #8c8c8c;
   background-image: url(/src/img/marta/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -868,7 +868,7 @@ body {
   gap: 16px;
 }
 .meets__article {
-  background: #F8F1E9;
+  background: #f8f1e9;
   border-radius: 8px;
   padding: 16px 20px;
   overflow: hidden;
@@ -887,7 +887,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #A76E00;
+  color: #a76e00;
   margin: 0;
   display: flex;
   align-items: center;
@@ -898,13 +898,13 @@ body {
   font-weight: 500;
   font-size: 28px;
   line-height: 100%;
-  color: #A76E00;
+  color: #a76e00;
 }
 .meets__arrow {
   width: 10px;
   height: 10px;
-  border-right: 2px solid #A76E00;
-  border-bottom: 2px solid #A76E00;
+  border-right: 2px solid #a76e00;
+  border-bottom: 2px solid #a76e00;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
@@ -932,6 +932,9 @@ body {
 .meets__line {
   display: none;
 }
+.meets {
+  /* ПЛАНШЕТИ */
+}
 @media (min-width: 724px) {
   .meets__title {
     font-size: 36px;
@@ -945,6 +948,9 @@ body {
   .meets__toggle:checked ~ .meets__header .meets__arrow {
     transform: rotate(45deg);
   }
+}
+.meets {
+  /* ПК / ДЕСКТОП */
 }
 @media (min-width: 1380px) {
   .meets {
@@ -962,26 +968,54 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    align-items: start;
+    align-items: stretch;
+    max-width: none;
   }
   .meets__article {
     padding: 24px 20px;
-    min-height: 440px;
-    width: 310px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.3s ease, border-color 0.3s ease;
   }
+}
+@media (min-width: 1380px) and (hover: hover) and (pointer: fine) {
+  .meets__article:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    border-color: #a76e00;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  }
+  .meets__article:hover .meets__smalltitle {
+    transform: translateX(4px);
+    color: #c48200;
+  }
+  .meets__article:hover .meets__number {
+    color: #c48200;
+  }
+  .meets__article:hover .meets__item {
+    transform: translateX(4px);
+    color: #222222;
+  }
+}
+@media (min-width: 1380px) {
   .meets__smalltitle {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 129%;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .meets__number {
+    transition: color 0.3s ease;
   }
   .meets__item {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   .meets__item:last-child {
-    font-size: 19px;
+    font-size: 16px;
   }
   .meets__list {
     display: block;
@@ -990,7 +1024,7 @@ body {
     display: none;
   }
   .meets__header {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .meets__line {
     width: 384px;
@@ -4071,7 +4105,28 @@ body {
     border: 1px solid #3d3c39;
     background: #fdfdfd;
     position: relative;
-    width: 338px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease;
+  }
+}
+@media screen and (min-width: 1380px) and (hover: hover) and (pointer: fine) {
+  .team__item:hover {
+    transform: translateY(-10px);
+    border-color: #a76e00;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+  }
+  .team__item:hover .team__wrapper {
+    transform: scale(1.08);
+    border-color: #a76e00;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .team__item:hover .team__img {
+    transform: scale(1.05);
+  }
+  .team__item:hover .team__btn {
+    background: #04867e;
+    color: #f8f1e9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
 @media screen and (min-width: 724px) {
@@ -4108,17 +4163,22 @@ body {
     flex-shrink: 0;
     flex: 0 0 150px;
     top: -100px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.4s ease, box-shadow 0.4s ease;
   }
 }
 .team__img {
   display: block;
   width: 64px;
   height: 64px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 1380px) {
   .team__img {
     width: 120px;
     height: 120px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 .team__about {
